@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8"/>
+	<title>WebGL Library Unit Test</title>
+	<link rel="stylesheet" href="https://unpkg.com/mocha@5.2.0/mocha.css"/>
+</head>
+<body>
+	<div id="mocha"></div>
+	<script src="https://unpkg.com/chai/chai.js"></script>
+	<script src="https://unpkg.com/mocha@5.2.0/mocha.js"></script>
+	<script>mocha.setup("bdd");</script>
+	<script type="module" src="./math/Vector3.js"></script>
+	<script type="module">
+		mocha.checkLeaks();
+		mocha.run();
+	</script>
+</body>
+</html>
